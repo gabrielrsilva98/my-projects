@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script defer src="./js/style.js"></script>
+    <title>Super Calculadora</title>
+</head>
+
+<body>
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <h1 class="text-center">Super Calculadora</h1>
+            <br>
+            <div class="row text-center">
+                <div class="col">
+                    <label for="">Primeiro Número (A)</label>
+                    <input class="form-control form-control-lg" type="text" id="a" placeholder="Ex: 2">
+                </div>
+                <div class="col">
+                    <label for="">Segundo Número (B)</label>
+                    <input class="form-control form-control-lg" type="text" id="b" placeholder="Ex: 5">
+                </div>
+            </div>
+            <hr>
+            <h3 class="text-center">Cálculos</h3>
+            <br>
+            <div class="row text-center" id="calculos"></div>
+            <div class="row text-center">
+                <div class="col">
+                    <label for="">Soma (A + B)</label>
+                    <input class="form-control form-control-lg" id="somaAB" type="text" readonly>
+                </div>
+                <div class="col">
+                    <label for="">Subtração (A - B)</label>
+                    <input class="form-control form-control-lg" id="subAB" type="text" readonly>
+                </div>
+                <div class="col">
+                    <label for="">Subtração (B - A)</label>
+                    <input class="form-control form-control-lg" id="subBA" type="text" readonly>
+                </div>
+                <div class="w-100"></div>
+                <br>
+                <div class="col">
+                    <label for="">Multiplicação (A x B)</label>
+                    <input class="form-control form-control-lg" id="multAB" type="text" readonly>
+                </div>
+                <div class="col">
+                    <label for="">Divisão (A / B)</label>
+                    <input class="form-control form-control-lg" id="divAB" type="text" readonly>
+                </div>
+                <div class="col">
+                    <label for="">Divisão (B / A)</label>
+                    <input class="form-control form-control-lg" id="divBA" type="text" readonly>
+                </div>
+                <div class="w-100"></div>
+                <br>
+                <div class="col">
+                    <label for="">Quadrado de A (A²)</label>
+                    <input class="form-control form-control-lg" id="quadradoA" type="text" readonly>
+                </div>
+                <div class="col">
+                    <label for="">Quadrado de B (B²)</label>
+                    <input class="form-control form-control-lg" id="quadradoB" type="text" readonly>
+                </div>
+                <div class="col">
+                    <label for="">Divisores inteiros de A</label>
+                    <input class="form-control form-control-lg" id="divIntA" type="text" readonly>
+                </div>
+                <div class="w-100"></div>
+                <br>
+                <div class="col">
+                    <label for="">Divisores inteiros de B</label>
+                    <input class="form-control form-control-lg" id="divIntB" type="text" readonly>
+                </div>
+                <div class="col">
+                    <label for="">Fatorial de A (A!)</label>
+                    <input class="form-control form-control-lg" id="fatorialA" type="text" readonly>
+                </div>
+                <div class="col">
+                    <label for="">Fatorial de B (B!)</label>
+                    <input class="form-control form-control-lg" id="fatorialB" type="text" readonly>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
