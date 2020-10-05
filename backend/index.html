@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"/>
+    <title>Search Developer</title>
+  </head>
+  <body>
+    <div class="jumbotron jumbotron-fluid">
+      <div class="container">
+        <h1 class="text-center">Search Developer</h1>
+        <br />
+        <div class="row text-center">
+          <div class="col">
+            <input class="form-control form-control-lg" type="text" id="nameValue" placeholder="Pesquisa por nome"/>
+          </div>
+          <button class="btn btn-primary" id="btn-search">Buscar</button>
+          <div class="w-100"></div>
+            <div class="col-1">
+                <div class="form-check">
+                <input class="form-check-input" name="programmingLanguages" type="checkbox" value="Java" id="defaultCheck1"/>
+                <label class="form-check-label" for="defaultCheck1">Java</label>
+                </div>
+            </div>
+            <div class="col-1">
+                <div class="form-check">
+                <input class="form-check-input" name="programmingLanguages" type="checkbox" value="Python" id="defaultCheck2"/>
+                <label class="form-check-label" for="defaultCheck1">Python</label>
+                </div>
+            </div>
+            <div class="col-1">
+                <div class="form-check">
+                <input class="form-check-input" name="programmingLanguages" type="checkbox" value="JavaScript" id="defaultCheck3"/>
+                <label class="form-check-label" for="defaultCheck1">JavaScript</label>
+                </div>
+            </div>
+            <div class="col-1 offset-7">
+                <div class="form-check">
+                    <input class="form-check-input radioCondition" type="radio" name="radioCondition" id="exampleRadios1" value="ou" checked>
+                    <label class="form-check-label" for="exampleRadios1">
+                        OU
+                    </label>
+                </div>
+            </div>
+            <div class="col-1">
+                <div class="form-check">
+                    <input class="form-check-input radioCondition" type="radio" name="radioCondition" id="exampleRadios2" value="e">
+                    <label class="form-check-label" for="exampleRadios2">
+                        E
+                    </label>
+                </div>
+            </div>
+        </div>
+        <hr />
+        <h3 class="text-center" id="devs-count"></h3>
+        <br/>
+        <div class="row text-center" id="devs-list"></div>
+      </div>
+    </div>
+
+    <script src="./js/style.js"></script>
+  </body>
+</html>
